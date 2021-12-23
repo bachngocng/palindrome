@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let string = prompt('Nhập chuỗi: ');
+    let arr = string.split('');
+    let x = arr.length;
+    function isPalindrome(arr) {
+        for (let i = 0; i < x ; i++) {
+            if (arr[i] === arr[x - 1 - i]) {
+                return true
+            } else {
+                return false
+            }
+        }
+    }
+
+    if (isPalindrome(arr) === true) {
+        document.write("đây là chuỗi palindrome")
+    } else {
+        document.write("đây không phải là chuỗi palindrome")
+    }
+
+
+</script>
+
+</body>
+</html>
